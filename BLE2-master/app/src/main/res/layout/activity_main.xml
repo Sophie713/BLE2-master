@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearLayout"
+    tools:context=".ui.MainActivity" >
+
+    <TextView
+        style="@style/PlainText"
+        android:text="@string/name" />
+
+    <ListView
+        android:id="@+id/deviceList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingStart="@dimen/sp20"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/scanButton"
+        style="@style/Button"
+        android:enabled="true"
+        android:onClick="onScan"
+        android:text="" />
+
+</LinearLayout>
